@@ -331,7 +331,7 @@ class Browser:
                 url, browser_context_id=ctx, new_window=new_window, for_tab=new_tab
             )
         )
-        await self.sleep(0.5)
+        await self.sleep(3)
         connection: tab.Tab = next(
             filter(
                 lambda item: item.type_ == "page" and item.target_id == target_id,
